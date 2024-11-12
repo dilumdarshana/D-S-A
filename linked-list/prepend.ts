@@ -146,7 +146,18 @@ class LinkedList {
   }
 
   reverse() {
+    let prev: Nood | null = null;
+    let current = this.head;
 
+    while (current) {
+      let next = current.next;
+
+      current.next = prev;
+      prev = current;
+      current = next;
+    }
+
+    this.head = prev;
   }
 }
 
@@ -167,7 +178,7 @@ list.insert(3, 2);
 /// list.removeByIndex(0);
 
 // remove element by value
-list.removeByValue(3);
+// list.removeByValue(3);
 
 // search for element
 console.log(list.search(4));
