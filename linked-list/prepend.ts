@@ -100,7 +100,52 @@ class LinkedList {
     this.size--;
   }
 
+  // time complexcity: O(n)
   removeByValue(value: number) {
+    if (this.isEmpty()) return null;
+    else if (this.head?.val === value) {
+      this.head = this.head.next;
+      this.size--;
+      return value;
+    } else {
+      let current = this.head;
+
+      if (current) {
+        while(current.next && current.next.val !== value) {
+          current = current.next;
+        }
+
+        const removedNode = current.next;
+
+        if (removedNode) {
+          current.next = removedNode.next;
+          this.size--;
+          return value;
+        }
+        return null;
+      }
+    }
+  }
+
+  // time complexcity: O(n)
+  search(value: number) {
+    let current = this.head;
+
+    if (current?.val == value) return 0;
+    else if (current) {
+      let index = 1;
+      while (current.next) {
+        if (current.next.val === value) return index;
+
+        index++;
+        current = current.next;
+      }
+    }
+
+    return -1;
+  }
+
+  reverse() {
 
   }
 }
@@ -118,10 +163,16 @@ list.append(4);
 // insert element to random position
 list.insert(3, 2);
 
-// remove element
+// remove element by index
 /// list.removeByIndex(0);
 
+// remove element by value
 list.removeByValue(3);
+
+// search for element
+console.log(list.search(4));
+
+list.reverse();
 
 // printing the whole object
 console.log(JSON.stringify(list))
