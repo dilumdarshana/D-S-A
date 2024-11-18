@@ -2,9 +2,9 @@
  * Stacks are always LIFO queues
  */
 
-class StackLIFO {
-  stack: number[] = [];
-  count: number = 0;
+class Stack {
+  private stack: number[] = [];
+  private count: number = 0;
 
   // add new element to the stack
   push(value: number): void {
@@ -35,7 +35,7 @@ class StackLIFO {
 
   // check if the stack is empty
   isEmpty(): boolean {
-    return false;
+    return this.size() === 0;
   }
 
   // return the number of elements in the stack
@@ -55,7 +55,7 @@ class StackLIFO {
 }
 
 // create obejct and test functions
-const stack = new StackLIFO();
+const stack = new Stack();
 
 stack.push(1);
 stack.push(2);
