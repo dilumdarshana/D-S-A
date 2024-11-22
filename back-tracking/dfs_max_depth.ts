@@ -16,6 +16,7 @@ const treeM = new TreeNodeM(2,
   new TreeNodeM(6, null, null),
 );
 
+// find depth
 const findMaxDepth = (root: TreeNodeM): number => {
   if (!root) return 0;
   let left = 0;
