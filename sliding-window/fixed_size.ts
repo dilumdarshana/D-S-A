@@ -23,6 +23,4 @@ function findMaxSum(nums: number[], k: number): number {
 }
 
 // call function
-const nums = [1, 4, 2, 10, 23, 3, 1, 0, 20];
-const k = 4;
-console.log(findMaxSum(nums, k)); // Output: 39
+console.log(findMaxSum([1, 4, 2, 10, 23, 3, 1, 0, 20], 4)); // Output: 39
