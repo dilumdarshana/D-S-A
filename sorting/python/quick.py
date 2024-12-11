@@ -23,25 +23,35 @@ def list_linked_list(head: ListNode):
         current = current.next
 
 class Solution:
-    def deleteMiddle(self, head: ListNode | None) -> ListNode | None:
-        dummy = ListNode(0)
-        dummy.next = head
-        slow = dummy
-        fast = head
+    def addTwoNumbers(self, l1: ListNode | None, l2: ListNode | None) ->  ListNode:
+        l, r = 0, 0
+        out = ListNode(0)
+        current = out
+        carry_amount = 0
 
-        while fast and fast.next:
-            slow = slow.next
-            fast = fast.next.next
+        while l1 or l2:
+            i, j = 0, 0
+            if l1:
+                i = l1.val if l1 else 0
+                l1 = l1.next
+            if l2:
+                j = l2.val if l2 else 0
+                l2 = l2.next
+            current_amnt = (i + j + carry_amount)%10
+            carry_amount = (i + j + carry_amount)//10
+            current.next = ListNode(current_amnt)
+            current = current.next
 
-        # remove the middle node
-        slow.next = slow.next.next
+        if carry_amount > 0:
+            current.next = ListNode(carry_amount)
+        return out.next
 
-        # return new head
-        return dummy.next
-
+    
 linkedList = Solution()
-head = create_linked_list([1,2,3,4,5])
+head1 = create_linked_list([9,9,9,9,9,9,9])
+head2 = create_linked_list([9,9,9,9])
+#print(linkedList.addTwoNumbers(head1, head2))
+# head = create_linked_list([1,2,3,4,5])
 
-out = linkedList.deleteMiddle(head)
-
+out = linkedList.addTwoNumbers(head1, head2)
 list_linked_list(out)
