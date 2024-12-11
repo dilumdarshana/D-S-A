@@ -1,10 +1,12 @@
 # Data Structures and Algorithms
 
-## Major problem solving patterns collection
+## Major problem solving patterns collection and Data Structures
 
 ## How to run
 ```
-npx ts-node linked-list/list.ts
+npx ts-node algorithms/linked-list/ts/list.ts
+
+python algorithms/linked-list/python/list.py
 ```
 
 ## Differece between DFS and BFS
