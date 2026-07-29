@@ -4,7 +4,7 @@
 
 ## How to run
 ```
-npx ts-node algorithms/linked-list/ts/list.ts
+npx tsx algorithms/linked-list/ts/list.ts
 
 python algorithms/linked-list/python/list.py
 ```

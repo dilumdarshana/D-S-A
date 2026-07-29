@@ -13,7 +13,7 @@ function findMaxSum(nums: number[], k: number): number {
   }
 
   // sliding window
-  for (let j = 1; j < nums.length; j++) {
+  for (let j = 1; j <= nums.length - k; j++) {
     sum += nums[j+k-1] - nums[j-1];
 
     if (sum > maxSum) maxSum = sum;

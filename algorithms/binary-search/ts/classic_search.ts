@@ -1,5 +1,5 @@
 function binarySearch(nums: number[], target: number): number {
-  const arrSorted = nums.sort();
+  const arrSorted = nums.sort((a, b) => a - b);
 
   let left = 0;
   let right = nums.length - 1;
