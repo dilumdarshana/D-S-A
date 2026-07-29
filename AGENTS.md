@@ -17,8 +17,9 @@ No package manager, no build system, no lint/format config.
 algorithms/             — one subdirectory per pattern
   back-tracking/ts/     — DFS, BFS on trees
   binary-search/ts/
+  divide-conquer/ts/    — fast exponentiation
   dynamic-programming/ts/
-  graph/ts/             — BFS, DFS on graphs
+  graph/ts/             — BFS, DFS, Dijkstra, Union-Find, topo sort, matrix BFS
   greedy/ts/
   linked-list/ts/
   recursion/ts/
@@ -27,7 +28,7 @@ algorithms/             — one subdirectory per pattern
   stacks/ts/            — stack (LIFO), queue (FIFO)
   two-pointer/ts/
 data-structures/  — built-in type usage and custom DS examples
-  ts/             — array, map, set, stack, queue, binary_tree, heap, graph
+  ts/             — array, map, set, stack, queue, binary_tree, bst, trie, heap, graph
   python/
 ```
 
