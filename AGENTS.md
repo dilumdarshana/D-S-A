@@ -4,6 +4,8 @@
 
 Educational DSA practice repo. Standalone example scripts — no tests, no production code.
 
+Key reference: [`BIG_O.md`](./BIG_O.md) — complexity tables for DS and algorithm patterns.
+
 ## Languages
 
 - **TypeScript** — run with `npx tsx <file>` (or `npx ts-node` if `tsx` unavailable)

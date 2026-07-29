@@ -21,6 +21,8 @@ A knowledge base of common DSA patterns with standalone examples in TypeScript a
 
 [Data Structures](data-structures/) — built-in type usage and custom implementations (array, map, set, stack, queue, binary tree, BST, trie, heap, graph).
 
+[Big O Notation](BIG_O.md) — complexity reference for all structures and patterns.
+
 ## Run
 
 ```sh
