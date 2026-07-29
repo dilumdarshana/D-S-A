@@ -1,18 +1,32 @@
-# Data Structures and Algorithms
+# Data Structures & Algorithms
 
-## Major problem solving patterns collection and Data Structures
+A knowledge base of common DSA patterns with standalone examples in TypeScript and Python.
 
-## How to run
+## Topics
+
+| Pattern | Files |
+|---------|-------|
+| [Backtracking](algorithms/back-tracking/) | DFS / BFS on trees |
+| [Binary Search](algorithms/binary-search/) | Classic search |
+| [Dynamic Programming](algorithms/dynamic-programming/) | Fibonacci, 0/1 Knapsack, LCS |
+| [Graph](algorithms/graph/) | BFS, DFS traversals |
+| [Greedy](algorithms/greedy/) | Coin change, stock trading |
+| [Linked List](algorithms/linked-list/) | Singly linked list operations |
+| [Recursion](algorithms/recursion/) | Factorial, power |
+| [Sliding Window](algorithms/sliding-window/) | Fixed size, with hashmap |
+| [Sorting](algorithms/sorting/) | Bubble, selection, insertion, merge, quick |
+| [Stacks & Queues](algorithms/stacks/) | LIFO and FIFO implementations |
+| [Two Pointer](algorithms/two-pointer/) | Pair sum, cycle detection |
+
+[Data Structures](data-structures/) — built-in type usage and custom implementations (array, map, set, stack, queue, binary tree, heap, graph).
+
+## Run
+
+```sh
+npx tsx <file>       # TypeScript
+python <file>        # Python 3
 ```
-npx tsx algorithms/linked-list/ts/list.ts
-
-python algorithms/linked-list/python/list.py
-```
-
-## Differece between DFS and BFS
-
-- DFS - Goes to the depth by nodes. Use Stack to implement this.
-- BFS - Goes level by level. Use Queue to implement this.
 
 ## Time complexity comparison
-![Image](https://github.com/user-attachments/assets/53d7ea4a-8078-4b7b-9901-69c262369883)
+
+![Complexity](https://github.com/user-attachments/assets/53d7ea4a-8078-4b7b-9901-69c262369883)
